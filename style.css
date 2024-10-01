@@ -2,13 +2,10 @@
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 15fr;
-    grid-row: 2;
 }
 
 .header-container {
-    grid-row: 1;
-    grid-column: span 2;
-    justify-self: center;
+    grid-column: 1 span 2;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -16,54 +13,71 @@
 
 .sidebar-container {
     grid-area: 1 / 1 / 3 / 2;
+    grid-template-columns: 1fr;
     display:grid;
-    grid-template-columns: 1fr 8fr;
-    grid-template-rows: 1fr 2fr 2fr;
-
+    grid-template-rows: 0.4fr 1fr 0.5fr;
+    height:min-content;
+    background-color: #38bdf8;
+    color: white;
 }
 
 .logoContainer {
     grid-row: 1;
     grid-column: 1 / 3;
+    grid-template-columns: 1fr 3fr;
     display: grid;
 }
 
 .logo {
     grid-column: 1 / 2;
+    align-self: center;
+    justify-self: center;
 }
   
 .dashboard {
     grid-column: 2 / 3;
+    align-self: center;
+    justify-self: left;
 }
 
 .topSidebar {
     grid-row: 2;
     grid-column: 1 / 3;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
+    padding-top: 30px;
+    align-self: center;
 }
 
 .topSidebar > div[class$="-icon"] {
     grid-column: 1;
+    align-self: center;
+    justify-self: center;
   }
   
 .topSidebar > div:not([class$="-icon"]) {
     grid-column: 2;
+    align-self: center;
+    justify-self: left;
 }
 
 .bottomSidebar {
     grid-row: 3;
     grid-column: 1 / 3;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
 }
 
 .bottomSidebar > div[class$="-icon"] {
     grid-column: 1;
+    align-self: center;
+    justify-self: center;
 }
   
 .bottomSidebar > div:not([class$="-icon"]) {
     grid-column: 2;
+    align-self: center;
+    justify-self: left;
 }
 
 .main-content-container {
@@ -71,6 +85,7 @@
     display: grid;
     grid-template-columns: 6fr 1fr;
     grid-template-rows: 1fr;
+    background-color: #d1d5db
 }
 
 .projectCardsContainer {
