@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-ThinItalic-webfont.eot');
+    src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-ThinItalic-webfont.woff') format('woff'),
+         url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
+         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); (under the Apache Software License). 
+    font-weight: 200;
+}
+
+body {
+    font-family: roboto, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -5,10 +20,112 @@
 }
 
 .header-container {
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
     grid-column: 1 span 2;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    height: 20vh;
+}
+
+.header-top-left {
+    grid-auto-flow: column;
+    display: grid;
+    gap: 12px;
+    justify-self: left; 
+    align-self: center;
+}
+
+input {
+    width: 80vh;
+    height: 3vh;
+    background-color: #d1d5db;
+    border: 0;
+    border-radius: 25px;
+}
+
+.header-top-right {
+    grid-auto-flow: column;
+    display: flex;
+    gap: 30px;
+    align-self: center;
+    justify-self: right ;
+    padding-right: 4vh;
+}
+
+.alert-icon {
+    align-self: center;
+    justify-self: right ;
+}
+
+.user-profile {
+    align-self: center;
+    justify-self: right;
+}
+
+.profile-name {
+    align-self: center;
+    justify-self: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header-bottom-left {
+    grid-auto-flow: column;
+    display: grid;
+    gap: 20px;
+    align-self: center;
+    justify-self: left ;
+}
+
+.topMessage {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.username {
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 3px;
+}
+
+.header-bottom-right {
+    grid-auto-flow: column;
+    display: grid;
+    gap: 4vh;
+    align-self: center;
+    justify-self: right ;
+    padding-right: 4vh;
+}
+
+button {
+    background-color: #0ea5e9;
+    color: white; 
+    border-radius: 25px;
+    border: 0;
+    height: 4vh;
+    width: fit-content;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    align-self: center;
+    justify-self: center ;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.user-profile {
+    height: 5vh;
+    width: auto;
+    border-radius: 25px;
+}
+
+.user-icon {
+    height: 8vh;
+    width: auto;
+    border-radius: 35px;
 }
 
 .sidebar-container {
@@ -16,9 +133,10 @@
     grid-template-columns: 1fr;
     display:grid;
     grid-template-rows: 0.4fr 1fr 0.5fr;
-    height:min-content;
-    background-color: #38bdf8;
+    height: 100vh;
+    background-color: #0ea5e9;
     color: white;
+
 }
 
 .logoContainer {
@@ -38,6 +156,8 @@
     grid-column: 2 / 3;
     align-self: center;
     justify-self: left;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .topSidebar {
@@ -46,7 +166,10 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding-top: 30px;
-    align-self: center;
+    align-self: self-start;
+    font-size: 22px;
+    font-weight: 600;
+    gap: 16px;
 }
 
 .topSidebar > div[class$="-icon"] {
@@ -65,6 +188,10 @@
     grid-row: 3;
     grid-column: 1 / 3;
     display: grid;
+    align-self: self-start;
+    gap: 16px;
+    font-size: 22px;
+    font-weight: 600;
     grid-template-columns: 1fr 3fr;
 }
 
@@ -85,7 +212,8 @@
     display: grid;
     grid-template-columns: 6fr 1fr;
     grid-template-rows: 1fr;
-    background-color: #d1d5db
+    background-color: #d1d5db;
+    height: 80vh;
 }
 
 .projectCardsContainer {
