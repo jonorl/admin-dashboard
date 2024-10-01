@@ -1,13 +1,3 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-ThinItalic-webfont.eot');
-    src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-ThinItalic-webfont.woff') format('woff'),
-         url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
-         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); (under the Apache Software License). 
-    font-weight: 200;
-}
-
 body {
     font-family: roboto, 'Times New Roman', Times, serif;
     margin: 0;
@@ -112,6 +102,7 @@ button {
     padding-right: 3vh;
     align-self: center;
     justify-self: center ;
+    font-family: roboto, 'Times New Roman', Times, serif;
     font-size: 16px;
     font-weight: 500;
 }
